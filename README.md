@@ -10,12 +10,12 @@ npm i nodemon
 npm i express mongoose ejs
 npm i --save-dev nodemon
 ```
-Now we can create our server with two ways
+Now we can start our server with two ways
 
 ```bash
 node server.js
 ```
-or if you want to MAKE LIVE CHANGES use
+or if you want to make LIVE CHANGES use
 
 ```bash
 npm run devStart
@@ -23,7 +23,7 @@ npm run devStart
 
 Make sure you have installed NodeJS, MongoDB and all dependencies for you to run our project well
 
-Your app should now be running on [localhost:3000](localhost:3000)
+Your app should now be running on localhost:3000
 
 ## Contributing
 Pull request are off for this project
