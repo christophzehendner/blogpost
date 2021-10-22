@@ -98,3 +98,68 @@ section.section {
     background-color: #000;
     color: #fff;
 }
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .swiper-container {
+    overflow: inherit;
+}
+
+.slider .swiper-pagination-bullet-active {
+    background-color: #000;
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    transition: ease .4s;
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after
+{
+    content: none!important;
+    display: none;
+}
+
+.slider .swiper-button-prev:hover,
+.slider .swiper-button-next:hover
+{
+    opacity: .9;
+}
+
+.slider .swiper-button-prev{
+    left: 15px;
+}
+
+.slider .swiper-button-next{
+    right: 15px;
+}
+
+.slider .img {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .slider .swiper-button-prev,
+    .slider .swiper-button-next
+    {
+        display: none;
+    }
+}
+
