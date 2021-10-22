@@ -46,3 +46,55 @@ section.section {
     color: #fff;
     opacity: .8;
 }
+
+.header {
+    display: block;
+    padding: 30px 0 0 0;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 3em;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 1.5em;
+}
+
+.header .nav {
+    width: 100%;
+    display: block;
+    border-bottom: 5px solid #000;
+}
+
+.header .nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav .menu li{
+    display: block;
+}
+
+.header .nav .menu li a{
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: ease .4s;
+}
+
+.header .nav .menu li a:hover{
+    background-color: #000;
+    color: #fff;
+}
