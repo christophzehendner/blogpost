@@ -1,2 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Vidaloka&display=swap');
-@import url('');
+@import url("https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Vidaloka', serif;
+}
+
+.title.-border {
+    border-bottom: 5px solid #000;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+section.section {
+    padding: 80px 0;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .09);
+}
+
+.load {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    transition: ease .4s;
+}
+
+.load:hover {
+    color: #fff;
+    opacity: .8;
+}
