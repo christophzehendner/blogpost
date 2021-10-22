@@ -373,3 +373,7 @@ aside .box.box-tag .tags li a:hover{
     font-family: 'Vidaloka', serif;
     margin-top: 50px;
 }
+
+.content-blog {
+    margin: 32px;
+}
