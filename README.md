@@ -24,7 +24,7 @@ npm run devStart
 Make sure you have installed NodeJS, MongoDB and all dependencies for you to run our project well
 
 ## Contributing
-PUll request are off for this project
+Pull request are off for this project
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
