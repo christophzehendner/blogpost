@@ -23,7 +23,7 @@ npm run devStart
 
 Make sure you have installed NodeJS, MongoDB and all dependencies for you to run our project well
 
-###Your app should now be running on [localhost:3000](localhost:3000)
+Your app should now be running on [localhost:3000](localhost:3000)
 
 ## Contributing
 Pull request are off for this project
