@@ -24,5 +24,13 @@
   "devDependencies": {
     "nodemon": "^2.0.14"
   },
-  "description": "Blog post UP"
+  "description": "Blog post UP",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophzehendner/blogpost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christophzehendner/blogpost/issues"
+  },
+  "homepage": "https://github.com/christophzehendner/blogpost#readme"
 }
