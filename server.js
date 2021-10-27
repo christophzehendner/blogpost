@@ -17,7 +17,7 @@ client.connect((err) => {
 });*/
 
 const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://rshdd:rshdd:@blogpostup.mwjnm.mongodb.net/test?retryWrites=true";
+const uri = "mongodb+srv://rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect((err) => {
   const collection = client.db("test");
