@@ -4,10 +4,10 @@ const Article = require('./models/article')
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
-const uri = process.env.MONGODB_URI;
+
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://rshdd:rshdd@blogpostup.mwjnm.mongodb.net/rshdd?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
