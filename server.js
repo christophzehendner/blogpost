@@ -6,10 +6,12 @@ const methodOverride = require('method-override')
 const app = express()
 
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = process.env.MONGODB_URI;
+const { MongoClient } = require("mongodb");
+const uri_server = "mongodb+srv://rshdd:rshdd@blogpostup.mwjnm.mongodb.net?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
+client.connect((err) => {
+  console.log("Connected");
+  const database = client.db("blogpostup");
   const collection = client.db("test").collection("devices");
   // perform actions on the collection object
   client.close();
@@ -39,7 +41,7 @@ app.use('/articles', articleRouter)
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 3000;
 }
 
 app.listen(port);
