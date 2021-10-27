@@ -1,5 +1,5 @@
 const express = require('express')
-//const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const Article = require('./models/article')
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
@@ -25,6 +25,17 @@ client.connect(err => {
   client.close();
 });
 
+
+async function connectToDB() {
+  
+  // Database 
+  await mongoose.connect(`mongodb+srv://rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true },  () => {
+    
+    console.log('Connected to DB'); 
+  })
+  
+  }
+  connectToDB();
 /*mongoose.connect('mongodb://localhost/blog', {
   useNewUrlParser: true,
   useCreateIndex: true,
