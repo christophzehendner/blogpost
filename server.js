@@ -5,13 +5,10 @@ const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
 
-
-const { MongoClient } = require("mongodb");
-const uri_server = "mongodb+srv://rshdd:rshdd@blogpostup.mwjnm.mongodb.net/blogpost?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect((err) => {
-  console.log("Connected");
-  const database = client.db("blogpostup");
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://rshdd:hola123@blogpostup.mwjnm.mongodb.net/posts?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
   const collection = client.db("test").collection("devices");
   // perform actions on the collection object
   client.close();
