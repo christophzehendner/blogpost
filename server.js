@@ -6,7 +6,7 @@ const methodOverride = require('method-override')
 const app = express()
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://rshdd:rshdd@blogpostup.mwjnm.mongodb.net/admin?retryWrites=true&w=majority";
+const uri = "mongodb+srv://rshdd:rshdd@blogpostup.mwjnm.mongodb.net/atlasAdmin@admin?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
@@ -36,16 +36,9 @@ app.get('/', async (req, res) => {
 
 app.use('/articles', articleRouter)
 
-mongoose.Promise = global.Promise;
-
-app.use((err,req,res, next) => {
-  res.status(422).send({
-    error: err.message
-  })
-})
-
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
+
 app.listen(port);
