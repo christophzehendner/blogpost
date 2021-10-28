@@ -14,13 +14,11 @@ npm i --save-dev nodemon
 Now we can start our server with three ways
 
 ```bash
-1
 node server.js
 ```
 or if you want to make LIVE CHANGES use
 
 ```bash
-2
 npm run devStart
 ```
 or just visit our deployed website on Heroku
