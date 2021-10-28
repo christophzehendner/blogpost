@@ -21,7 +21,7 @@ const uri = "rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true&w=maj
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
   console.log("Connected");
-  const database = client.db("test");
+  const database = client.db("test").collections("test");
   // perform actions on the collection object
   client.close();
 });
