@@ -20,22 +20,12 @@ const { MongoClient } = require('mongodb');
 const uri = "rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-  const collection = client.db("test");
+  console.log("Connected");
+  const database = client.db("test");
   // perform actions on the collection object
   client.close();
 });
 
-
-async function connectToDB() {
-  
-  // Database 
-  await mongoose.connect(`mongodb+srv://rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true },  () => {
-    
-    console.log('Connected to DB'); 
-  })
-  
-  }
-  connectToDB();
 /*mongoose.connect('mongodb://localhost/blog', {
   useNewUrlParser: true,
   useCreateIndex: true,
