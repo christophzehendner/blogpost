@@ -35,7 +35,7 @@ client.connect(err => {
   client.close();
 });
 
-/*mongoose.connect('mongodb://localhost/blog', {
+mongoose.connect('mongodb+srv://rshdd:hola@blogpostup.mwjnm.mongodb.net/test?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
@@ -43,7 +43,7 @@ client.connect(err => {
   console.log("DB Connected!")
 }).catch(err => {
   console.log(Error, err.message);
-})*/
+})
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
